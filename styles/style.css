@@ -13,6 +13,7 @@ body {
   background-color : var(--jaune);
   color : var(--noir);
   text-align: center;
+  
   font-family: "titre"!important;
 }
 
