@@ -1,5 +1,15 @@
+
+@font-face {
+	font-family: "titre";
+	src: url('fonts/RundeckSmooth.ttf');
+}
+
 body {
   background-color : #ffde59;
   color : #222222;
   text-align: center;
+}
+
+h1 {
+  font-family: "titre";
 }
