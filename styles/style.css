@@ -1,15 +1,25 @@
 
+:root {
+  --jaune: #ffde59;
+  --noir: #222222;
+}
+
 @font-face {
 	font-family: "titre";
 	src: url('fonts/RundeckSmooth.ttf');
 }
 
 body {
-  background-color : #ffde59;
-  color : #222222;
+  background-color : var(--jaune);
+  color : var(--noir);
   text-align: center;
+  font-family: "titre";
 }
 
 h1 {
-  font-family: "titre";
+  font-size: 300%;
+}
+
+p {
+  font-size: 200%;
 }
