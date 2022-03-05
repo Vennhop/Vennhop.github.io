@@ -1,0 +1,121 @@
+@charset "UTF-8";
+/*!
+*    Header CSS
+*    Créée par Constant Vennin
+*    Pour Brasserie Vennhop
+*/
+:root{
+    --vh-yellow: #ffe437;
+    --vh-green: #048f4e;
+}
+
+@font-face {
+	font-family: "titre";
+	src: url('../fonts/RundeckSmooth.ttf');
+}
+
+body > header {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+    background-image: url(../../images/malt.jpg);
+	padding: 50px 10px 10px 10px;
+	z-index: 10;
+}
+
+
+
+body > header .logo {
+    color: black;
+    font-family: "titre";
+    font-size:50px;
+    text-decoration: none;
+    display: flex;
+	flex-direction: column;
+	align-items: center;
+    text-transform: uppercase;
+}
+
+body > header .logo em {
+    color: var(--vh-green);
+    font-style: normal;
+}
+
+body > header .logo img {
+    width: 120px;
+}
+
+body > header ul.mainMenu {
+	list-style-type: none;
+	margin: 20px 0 0;
+	padding: 0;
+	display: flex;
+	align-items: center;
+    justify-content: space-evenly;
+}
+
+body > header ul.mainMenu li {
+	display: flex;
+    align-items: center;
+}
+
+body > header ul.mainMenu li a {
+	position: relative;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 18px;
+	letter-spacing: 4px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	color: var(--vh-green);
+	transition: all .2s ease;
+}
+
+body > header ul.mainMenu li a:visited {
+    color: var(--vh-green);
+}
+
+body > header .logo img,
+body > header .logo span {
+	transition: all .7s cubic-bezier(.190, 1.000, .220, 1.000);
+	transform: translateY(0);
+}
+
+body > header .logo:hover img,
+body > header .logo:hover span {
+	transform: translateY(-4px);
+}
+
+
+/*febhfzefhefj*/
+
+body > header ul.mainMenu li a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 4px;
+    left: 50%;
+    position: absolute;
+    background: var(--vh-green);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+body > header ul.mainMenu li a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+body > header ul.mainMenu li a:hover {
+    color: var(--vh-green);
+    text-shadow: #048f4e 1px 1px 2px , #048f4e 0 0 1em, #048f4e 0 0 0.2em;
+}
+
+@media screen and (max-height: 300px) {
+    body > header ul.mainMenu {
+        margin-top: 40px;
+    }
+}

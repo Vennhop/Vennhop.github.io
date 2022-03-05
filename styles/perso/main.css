@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/*!
+*   Main CSS
+*   Créée par Constant Vennin
+*   Pour Brasserie Vennhop
+*/
+:root{
+    --vh-yellow: #ffe437;
+    --vh-green: #048f4e;
+    --vh-dark: rgb(36, 36, 36);
+}
+
+body {
+    background-color: black;
+}

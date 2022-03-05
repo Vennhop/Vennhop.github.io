@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/*!
+*    Section CSS
+*    Créée par Constant Vennin
+*    Pour Brasserie Vennhop
+*/
+:root{
+    --vh-yellow: #ffe437;
+    --vh-green: #048f4e;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("../../fonts/Montserrat/static/Montserrat-Thin.ttf");
+}
+
+section .titre {
+    text-align: center;
+    color: var(--vh-yellow);
+    font-family: "Montserrat", "Bitstream Vera Serif", serif;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+section {
+    padding-bottom: 50px;
+}

@@ -4,22 +4,88 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>VennHop</title>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logoVennhop.png" />
   <link rel="stylesheet" href="styles/js/bootstrap.popper.min.js">
   <link rel="stylesheet" href="styles/css/bootstrap.css">
   <link rel="stylesheet" href="styles/js/bootstrap.min.js">
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/perso/main.css">
+  <link rel="stylesheet" href="styles/perso/header.css">
+  <link rel="stylesheet" href="styles/perso/section.css">
 </head>
-  <body>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="container">
-          <h1 class="display-1">VENNHOP</h1>
-          <p class="h4">Le site est en cours de création.<br>Il arrive bientôt !</p>
-          <img width="480" class="img-fluid" src="images/tonneau.gif" alt="chargement..."><br>
-          <button type="button" class="btn btn-primary btn-lg"><a href="mailto:vennhop@protonmail.com">M'envoyer un mail</a></button>
+
+  <body id="top" onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='L'auteur ne permet pas la copie d'image ou de logo'; return true;">
+    <header >
+      <a href="#" class="logo">
+        <img src="images/logoVennhop.png" alt="LogoVennhop">
+        <span>VENN<em>HOP</em></span>
+      </a>
+      <nav>
+        <ul class="mainMenu nav justify-content-center">
+          <li class="nav-item">
+            <a class="accueilLink nav-link" href="#">Accueil</a>
+          </li>
+          <li class="nav-item">
+            <a class="productLink nav-link" href="#">Produits</a>
+          </li>
+          <li class="nav-item">
+            <a class="fabLink nav-link" href="# ">Fabrication</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="container-fluid">
+      <div class="row justify-content-between">
+        <h1 class="titre">Nos Produits</h1>
+        <div class="col">
+          <div class="card" style="width: 21rem;">
+            <img src="images/pavenn.jpg" class="card-img-top" alt="pavenn">
+            <div class="card-body">
+              <h2 class="card-title">Pavenn</h2>
+              <p class="card-text">Une bière blonde de style Pale Ale Belge, au goût délicieusement malté. Avec une pointe de houblon qui apporte des notes florales et tropicales (fruit de la passion, mangue).</p>
+              <a href="#" class="btn btn-primary">Voir son contenu</a>
+            </div>
+          </div>
         </div>
+        <div class="col">
+          <div class="card" style="width: 21rem;">
+            <img src="images/sam.jpg" class="card-img-top" alt="oncle sam">
+            <div class="card-body">
+              <h2 class="card-title">L'Oncle Sam</h2>
+              <p class="card-text">Une IPA américaine, du houblon, du houblon, et encore du houblon. Pour les accros de la bière fruitée et doucement amère. Une explosion de saveur houblonnée vous attend, avec une sélection de houblons 100% américains.</p>
+              <a href="#" class="btn btn-primary">Voir son contenu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 21rem;">
+            <img src="images/triple.jpg" class="card-img-top" alt="triple">
+            <div class="card-body">
+              <h2 class="card-title">Tripel</h2>
+              <p class="card-text">La triple belge dans toute son authenticité. Une sélection de multiples céréales accompagnée de houblons flamands, a patiemment attendu 3 mois avant de vous trouver pour vous dévoiler toute sa richesse. Cette triple saura de par son goût (et son degré d'alcool !) vous faire tourner la tête.</p>
+              <a href="#" class="btn btn-primary">Voir son contenu</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card" style="width: 21rem;">
+            <img src="..." class="card-img-top" alt="Pas de photo ! Déso !">
+            <div class="card-body">
+              <h2 class="card-title">Brunt</h2>
+              <p class="card-text">Les amateurs de brune devront encore attendre !</p>
+              
+            </div>
+          </div>
+        </div>
+        
+        
       </div>
-    </div>
+
+      <a href="mailto:vennhop@protonmail.com" class="btn btn-secondary btn-lg" role="button">J'EN VEUX !</a>
+    </section>
+    <footer>
+      
+    </footer>
   </body>
 </html>
