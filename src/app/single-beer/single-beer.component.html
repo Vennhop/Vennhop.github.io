@@ -1,0 +1,48 @@
+<section>
+    <div class="image">
+        <img [src]=" beer.image " [alt]=" beer.nom ">
+    </div>
+    <div class="texte">
+        <h1> {{ beer.nom | titlecase }} </h1>
+        <div class="sous-titre">
+            <h4> {{ beer.style | uppercase }} </h4>
+            <h3>75 cl, {{ beer.alcool }} % vol </h3>
+        </div>
+        <p> {{ beer.description }} </p>
+        <h5> Ingrédients : {{ beer.ingredients | titlecase }}. </h5>
+        <table class="table">
+            <thead>
+                <tr>
+                  <th scope="col" ><h4>Caractéristiques</h4></th>
+                </tr>
+              </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Nez</th>
+                    <td> {{ beer.nez }} </td>
+                </tr>
+                <tr>
+                    <th scope="row">Bouche</th>
+                    <td> {{ beer.bouche }} </td>
+                </tr>
+                <tr>
+                    <th scope="row">Couleur</th>
+                    <td> {{ beer.ebc }} EBC : 
+                        <svg viewBox="0 0 100 100" width="1em" height="1em" [attr.fill]="couleur" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="50" cy="50" r="50"/>
+                        </svg> 
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">Amertume</th>
+                    <td> {{ beer.ibu }} IBU </td>
+                </tr>
+            </tbody>
+        </table>
+        <div class="dessous-biere">
+            <button type="button" class="btn btn-outline-dark" routerLink="/beers">RETOUR</button>
+            <h2> {{ beer.prix | currency : 'EUR' }} </h2>
+        </div>
+        
+    </div>
+</section>

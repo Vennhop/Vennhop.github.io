@@ -1,0 +1,9 @@
+<a (click)="onEnSavoirPlus()">
+    <div class="beer-card">
+        <button routerLink="/beers">RETOUR</button>
+        <h1> {{ beer.nom | uppercase }} </h1>
+        <img [src]=" beer.image " [alt]=" beer.nom ">
+        <h2> {{ beer.prix | currency : 'EUR' }} </h2>
+        <button (click)="onEnSavoirPlus()">voir</button>
+    </div>
+</a>
